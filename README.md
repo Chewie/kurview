@@ -12,3 +12,7 @@ The app needs to environment variables to function:
 * `KRAKEN_SECRET`: The private key used to sign API messages
 
 The API key can be found on the settings tab of you Kraken account.
+
+## Docker image
+
+The docker image listens on the port 5000, be sure to correctly publish it.
