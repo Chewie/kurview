@@ -14,35 +14,7 @@
   <body>
     <div class="container">
       <h1>Kraken currency viewer</h1>
-      <table class="table table-striped">
-        <thead>
-          <tr>
-            <th>Currency</th>
-            <th>Balance</th>
-            <th>Rate</th>
-            <th>Change last hour</th>
-            <th>Value (EUR)</th>
-          </tr>
-        </thead>
-        <tbody>
-          {% for k, v in result['currencies'].items() %}
-          <tr>
-            <th scope="row">{{ k }}</th>
-            <td>{{ v['balance'] }}</td>
-            <td>{{ v['rate'] }}</td>
-            <td>{{ v['change'] }}</td>
-            <td>{{ v['total'] | round(2) }}</td>
-          </tr>
-          {% endfor %}
-          <tr class="table-info">
-            <th scope="row">Total</th>
-            <td>N/A</td>
-            <td>N/A</td>
-            <td>N/A</td>
-            <td>{{ result['total'] | round(2) }}</td>
-          </tr>
-        </tbody>
-      </table>
+      <h2>Error contacting the Kraken server, retrying in 30 seconds</h2>
     </div>
 
     <!-- Optional JavaScript -->
