@@ -15,4 +15,12 @@ The API key can be found on the settings tab of you Kraken account.
 
 ## Docker image
 
+The docker image is published on the DockerHub at `chewiebeardy/kurview`
+
 The docker image listens on the port 5000, be sure to correctly publish it.
+
+For example, you could run the image like so:
+
+~~~bash
+$ docker run chewiebeardy/kurview -p 5000:5000 -e 'KRAKEN_KEY=<key>' -e 'KRAKEN_SECRET=<secret>'
+~~~
