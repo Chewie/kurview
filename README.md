@@ -22,5 +22,5 @@ The docker image listens on the port 5000, be sure to correctly publish it.
 For example, you could run the image like so:
 
 ~~~bash
-$ docker run chewiebeardy/kurview -p 5000:5000 -e 'KRAKEN_KEY=<key>' -e 'KRAKEN_SECRET=<secret>'
+$ docker run -p 5000:5000 -e 'KRAKEN_KEY=<key>' -e 'KRAKEN_SECRET=<secret>' chewiebeardy/kurview 
 ~~~
